@@ -8,9 +8,10 @@ public class MinMaxFinder {
         System.out.println(Arrays.toString(findMinMax(array)));
     }
 
-    static int[] findMinMax(int[] numbers) {
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;;
+    public static int[] findMinMax(int[] numbers) {
+        if(numbers.length == 0) return null;
+        int min = numbers[0];
+        int max = numbers[0];
         for(int elem : numbers) {
             if(elem >= max) {
                 max = elem;

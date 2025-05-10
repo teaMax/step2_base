@@ -8,8 +8,8 @@ public class DayOfWeek {
 
         System.out.println("Введите номер дня недели: ");
         int numDay = scanner.nextInt();
-        String nameDay = "";
-        String typeDay = "";
+        String nameDay;
+        String typeDay;
 
         switch (numDay) {
             case(1):{
@@ -40,11 +40,15 @@ public class DayOfWeek {
                 nameDay = "Воскресенье";
                 break;
             }
+            default:
+                nameDay = "";
         }
         if(1 <= numDay  && numDay<= 5) {
             typeDay = "Рабочий день";
         } else if(numDay == 6 || numDay == 7) {
             typeDay = "Выходной";
+        } else {
+            typeDay = "";
         }
 
         System.out.println("Номер дня: " + numDay + " называется " + nameDay + " и является " + typeDay);

@@ -11,11 +11,11 @@ public class AgeCategory {
 
         if(age < 13) {
             System.out.println("Ребенок");
-        } else if(age >= 13 && age <= 19) {
+        } else if(age <= 19) {
             System.out.println("Подросток");
-        } else if(age >= 20 && age <= 64 ) {
+        } else if(age <= 64 ) {
             System.out.println("Взрослый");
-        } else if(age >= 65) {
+        } else {
             System.out.println("Пожилой");
         }
     }

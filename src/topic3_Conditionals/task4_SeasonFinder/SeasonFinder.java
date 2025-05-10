@@ -8,7 +8,7 @@ public class SeasonFinder {
 
         System.out.println("Введите номер месяца: ");
         int numMonth = scanner.nextInt();
-        String season = "";
+        String season;
         switch (numMonth) {
             case 1:
             case 2:
@@ -29,6 +29,9 @@ public class SeasonFinder {
             case 10:
             case 11:
                 season = "Осень";
+                break;
+            default:
+                season = "";
                 break;
         }
 

@@ -2,11 +2,12 @@ package topic4_Loops.task6_FactorialFor;
 
 public class FactorialFor {
     public static void main(String[] args) {
-        int factorial = 1;
-        for(int i = 1; i <= 10; i++) {
-            factorial *= i;
+        int result = 1;
+        int factorial = 10;
+        for(int i = 1; i <= factorial; i++) {
+            result *= i;
         }
 
-        System.out.println(factorial);
+        System.out.println(result);
     }
 }

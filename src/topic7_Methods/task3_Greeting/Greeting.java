@@ -5,7 +5,7 @@ public class Greeting {
         System.out.println(getGreeting("Иван"));
     }
 
-    static String getGreeting(String name) {
+    public static String getGreeting(String name) {
         return("Привет, " + name + "!");
     }
 }

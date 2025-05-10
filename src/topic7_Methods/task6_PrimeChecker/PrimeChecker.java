@@ -6,7 +6,8 @@ public class PrimeChecker {
         System.out.println(isPrime(17));
     }
 
-    static boolean isPrime(int number){
+    public static boolean isPrime(int number){
+        if(number <= 1) return  false;
         int i = 2;
         while(i < number) {
             if(number % i == 0) return false;

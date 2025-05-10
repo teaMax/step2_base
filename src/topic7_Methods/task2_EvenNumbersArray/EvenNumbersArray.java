@@ -8,7 +8,7 @@ public class EvenNumbersArray {
         System.out.println(Arrays.toString(getEvenNumbers(n)));
     }
 
-    static int[] getEvenNumbers(int n) {
+    public static int[] getEvenNumbers(int n) {
         int[] array = new int[n];
         for(int i = 0; i < n; i++) {
             array[i] = (i + 1) * 2;

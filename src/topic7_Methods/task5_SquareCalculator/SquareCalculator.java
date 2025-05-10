@@ -6,7 +6,7 @@ public class SquareCalculator {
         System.out.println(square(n));
     }
 
-    static int square(int number){
+    public static int square(int number){
         return number * number;
     }
 }

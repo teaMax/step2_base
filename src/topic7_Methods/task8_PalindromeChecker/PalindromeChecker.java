@@ -8,7 +8,7 @@ public class PalindromeChecker {
         System.out.println(isPalindrome(str2));
     }
 
-    static boolean isPalindrome(String text) {
+    public static boolean isPalindrome(String text) {
         String replaced = text.replaceAll(" ","").toLowerCase();
         String reversedString = new StringBuilder(replaced).reverse().toString();
         for(int i = 0; i < reversedString.length(); i++) {

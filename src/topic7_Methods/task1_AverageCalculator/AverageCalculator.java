@@ -6,7 +6,7 @@ public class AverageCalculator {
         System.out.println(getAverage(elems));
     }
 
-    static double getAverage(double[] numbers){
+    public static double getAverage(double[] numbers){
         double average = 0;
         double sum = 0;
         for(double elem : numbers) {
